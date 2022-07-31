@@ -43,7 +43,7 @@ kramdown:
   enable_coderay: true
 
 # Disque
-disque: httpdongchuangithubio.disqus.com
+# disque: httpdongchuangithubio.disqus.com
 
 # Pagination
 paginate: 10
@@ -63,9 +63,9 @@ navs:
     href: /blog
     label: Blog
 
-  -
-    href: /bookmark
-    label: Bookmark
+#   -
+#     href: /bookmark
+#     label: Bookmark
 
   -
     href: /about
