@@ -4,7 +4,7 @@ title: About Me
 menu: about
 subtitle:   <h3>Download My CV</h3>
             <a role="button" class="btn btn-primary hvr-grow-shadow" 
-               #href="/assets/files/WWW_CH.pdf" 
+               href="/assets/files/WWW_CH.pdf" 
                target="_blanks">
                 <span class="flag-icon flag-icon-cn"></span> 中文
             </a>
