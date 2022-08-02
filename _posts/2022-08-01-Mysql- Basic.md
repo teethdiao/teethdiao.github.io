@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Mysql基本语法
+title: Mysql Basic Knowledge
 category: MySQL
 tags: [mysql]
 ---
-
 
 
 本文件将会持续更新
@@ -15,7 +14,7 @@ tags: [mysql]
 
 
 
-## 参考文档
+# 参考文档
 
 
 
