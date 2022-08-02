@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Mysql知识
-category: MySql
-tags: [mysql]
+title: Build Path and Class Path
+category: java
+tags: [java]
 ---
 
 ## Build Path and Class Path
