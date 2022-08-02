@@ -1,33 +1,35 @@
 ---
-
 layout: post
-title: Build Path and Class Path
-category: sql
-tags: [sql]
-
+title: Mysql知识
+category: mysql
+tags: [mysql]
 ---
 
+## Build Path and Class Path
 
+* 'BUILDPATH' is for **building** your application. It is used to find the dependencies needed to build your project at **compile time**.
+* 'CLASSPATH' is for **executing** the application. It is used to load compiled classes and resources at **runtime**.
+* Each element of in this path corresponds to a root, classes needed will be found in the corresponding subdirectories.
 
-## 说明
+### Build Path
 
-本文件将会持续更新
+'BUILDPATH' is **NOT** standard Java terminology. 'BUILDPATH' path is a list of paths visible to the compiler when building the project. It could include the following:
 
-20220801更新一些基本的目录情况
+1. JRE system libraries.
+2. Third-part JARs. (mysql-connector-java.jar for jdbc with mysql)
+3. Classes and libraries exported by projects referenced by this project.
+4. Code in the source folders of current project.
 
-后续会在每个子模块增加**实际应用中遇到的知识补充**
+It is the term for the richer way that a typical **IDE** specifies the relationship between the "modules" or "projects" that make up an application. The IDE also uses the 'BUILDPATH' to figure out how to package up your code and its dependencies as (for example) a WAR file.
 
+(If you are using Maven for your project, the IDE 'BUILDPATH' mechanism is secondary to the dependencies declared in the POM files. For example, using Eclipse with the m2eclipse, the 'BUILDPATH' is synthesized from the POM files.)
 
+### Class Path
 
-## 参考文档
+'CLASSPATH' is one way to tell JVM where to find compiled classes. It is typically a sequence of JAR file names and directory names. 'CLASSPATH' used by the compiler and the runtime system doesn't have to be the same, but they typically should be.
 
+## Ref
 
-
-==[语法学习部分](第13章 SQL Statements (https://dev.mysql.com/doc/refman/5.7/en/sql-statements.html))==
-
-> 主要是5.7第十三章内容
-
-==[语法学习部分中文推荐网站](https://www.1keydata.com/cn/sql/)==
-
-==[简单在线输入语句学习平台](https://www.sqlteaching.com/)==
-
+* [Stackoverflow](http://stackoverflow.com/questions/3529459/what-is-the-difference-between-class-path-and-build-path)
+* [Eclipse Helper](http://help.eclipse.org/juno/index.jsp?topic=%2Forg.eclipse.jdt.doc.user%2Freference%2Fref-properties-build-path.htm)
+* [Tutorials Point](http://www.tutorialspoint.com/eclipse/eclipse_java_build_path.htm)
