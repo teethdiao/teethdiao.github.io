@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Mysql知识
-category: mysql
+category: MySql
 tags: [mysql]
 ---
 
