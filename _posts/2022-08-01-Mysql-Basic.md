@@ -1,4 +1,9 @@
-[TOC]
+---
+layout: post
+title: Mysql基本语法
+category: sql
+tags: [sql]
+---
 
 # 说明
 
